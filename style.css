@@ -1,0 +1,669 @@
+/* =====================
+   DASAR
+===================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f0e8;
+    color: #4a3528;
+}
+
+
+/* =====================
+   NAVBAR
+===================== */
+
+nav {
+    background-color: #4a3528;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #d8b58a;
+}
+
+
+/* =====================
+   HOME
+===================== */
+
+.home {
+    height: 600px;
+
+    background-image:
+        linear-gradient(
+            rgba(50, 35, 25, 0.55),
+            rgba(50, 35, 25, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 10%;
+
+    color: white;
+}
+
+.home-text {
+    max-width: 550px;
+}
+
+.home-text p {
+    letter-spacing: 3px;
+}
+
+.home h1 {
+    font-size: 70px;
+    margin: 10px 0;
+}
+
+.home h3 {
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.tombol {
+    display: inline-block;
+
+    background-color: #b78655;
+    color: white;
+
+    padding: 12px 25px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.tombol:hover {
+    background-color: #956b42;
+}
+
+
+/* =====================
+   HOME INFO
+===================== */
+
+.home-info {
+    text-align: center;
+
+    padding: 80px 20%;
+}
+
+.home-info h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.home-info p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* =====================
+   PILIHAN
+===================== */
+
+.pilihan {
+    background-color: #eee3d5;
+
+    text-align: center;
+
+    padding: 70px 8%;
+}
+
+.pilihan h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.pilihan-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.pilihan-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+}
+
+.pilihan-card h3 {
+    margin-bottom: 15px;
+}
+
+.pilihan-card p {
+    line-height: 1.6;
+}
+
+
+/* =====================
+   JUDUL HALAMAN
+===================== */
+
+.page-title {
+    background-color: #e6d7c7;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.page-title h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+
+/* =====================
+   ABOUT
+===================== */
+
+.about {
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 80px 10%;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 100%;
+
+    border-radius: 8px;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-text h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* =====================
+   ABOUT 2
+===================== */
+
+.about-2 {
+    background-color: #eee3d5;
+
+    text-align: center;
+
+    padding: 70px 8%;
+}
+
+.about-2 h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.keunggulan {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.keunggulan div {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 8px;
+}
+
+.keunggulan h3 {
+    margin-bottom: 15px;
+}
+
+.keunggulan p {
+    line-height: 1.6;
+}
+
+
+/* =====================
+   ABOUT PLACE
+===================== */
+
+.about-place {
+    padding: 70px 15%;
+
+    text-align: center;
+}
+
+.about-place h2 {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.about-place p {
+    line-height: 1.8;
+}
+
+
+/* =====================
+   MENU
+===================== */
+
+.menu-section {
+    padding: 70px 10%;
+}
+
+.menu-section h2 {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 40px;
+}
+
+.warna {
+    background-color: #eee3d5;
+}
+
+.daftar-menu {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.menu-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ddd0c1;
+}
+
+.menu-card h3 {
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    color: #75665c;
+
+    margin-bottom: 15px;
+}
+
+.menu-card b {
+    color: #9a6d43;
+}
+
+
+/* =====================
+   CONTACT
+===================== */
+
+.contact-page {
+    display: flex;
+
+    gap: 50px;
+
+    padding: 80px 10%;
+}
+
+.contact-box,
+.contact-form {
+    width: 50%;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 8px;
+}
+
+.contact-box h2,
+.contact-form h2 {
+    font-size: 30px;
+
+    margin-bottom: 25px;
+}
+
+.contact-box p {
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.contact-box b {
+    color: #9a6d43;
+}
+
+
+/* FORM */
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: Arial, sans-serif;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #d6c7b8;
+
+    border-radius: 5px;
+
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #9a6d43;
+}
+
+.contact-form button {
+    background-color: #9a6d43;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #795333;
+}
+
+
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+    background-color: #2e211a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+footer p {
+    margin-top: 8px;
+
+    color: #cfc3b8;
+}
+
+
+/* =====================
+   TAMPILAN HP
+===================== */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+
+        font-size: 14px;
+    }
+
+    .home {
+        height: 500px;
+
+        padding: 30px;
+    }
+
+    .home h1 {
+        font-size: 50px;
+    }
+
+    .home-info {
+        padding: 60px 8%;
+    }
+
+    .pilihan-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        flex-direction: column;
+
+        padding: 60px 7%;
+    }
+
+    .about-img,
+    .about-text {
+        width: 100%;
+    }
+
+    .keunggulan {
+        grid-template-columns: 1fr;
+    }
+
+    .daftar-menu {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-page {
+        flex-direction: column;
+
+        padding: 60px 7%;
+    }
+
+    .contact-box,
+    .contact-form {
+        width: 100%;
+    }
+
+    .page-title h1 {
+        font-size: 40px;
+    }
+
+}
+
+/* =====================
+   STRUKTUR ORGANISASI
+===================== */
+
+.team-section {
+    padding: 85px 8%;
+    background-color: #f6f0e8;
+}
+
+.team-heading {
+    max-width: 600px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.team-label {
+    display: inline-block;
+    color: #9a6d43;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.team-heading h2 {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.team-heading p {
+    color: #75665c;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background-color: #fffdf9;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #e6d9ca;
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(74, 53, 40, 0.10);
+}
+
+.team-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.team-info {
+    padding: 22px 18px 25px;
+}
+
+.team-number {
+    font-size: 10px;
+    color: #a27a54;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.team-info h3 {
+    font-size: 19px;
+    margin: 12px 0 7px;
+}
+
+.team-role {
+    color: #9a6d43;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.team-desc {
+    color: #75665c;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* =====================
+   RESPONSIVE TIM
+===================== */
+
+@media (max-width: 1000px) {
+    .team-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .team-card img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 700px) {
+    .team-section {
+        padding: 60px 7%;
+    }
+
+    .team-heading h2 {
+        font-size: 28px;
+    }
+
+    .team-container {
+        grid-template-columns: 1fr;
+        max-width: 380px;
+    }
+
+    .team-card img {
+        height: 280px;
+    }
+}
